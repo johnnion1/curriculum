@@ -1,10 +1,10 @@
 ### Introduction
 
-Before we start digging into some pretty nifty JavaScript, we need to begin talking about *problem solving*: the most important skill a developer needs.
+Before we start digging into some pretty nifty JavaScript, we need to begin talking about _problem solving_: the most important skill a developer needs.
 
 Problem solving is the core thing software developers do. The programming languages and tools they use are secondary to this fundamental skill.
 
-From his book, *"Think Like a Programmer"*, V. Anton Spraul defines problem solving in programming as:
+From his book, _"Think Like a Programmer"_, V. Anton Spraul defines problem solving in programming as:
 
 > Problem solving is writing an original program that performs a particular set of tasks and meets all stated constraints.
 
@@ -12,7 +12,7 @@ The set of tasks can range from solving small coding exercises all the way up to
 
 New programmers often find problem solving the hardest skill to build. It's not uncommon for budding programmers to breeze through learning syntax and programming concepts, yet when trying to code something on their own, they find themselves staring blankly at their text editor not knowing where to start.
 
-The best way to improve your problem solving ability is by building experience by making lots and lots of programs. The more practice you have the better you'll be prepared to solve real world problems.
+The best way to improve your problem solving ablity is by building experience by making lots and lots of programs. The more practice you have the better you'll be prepared to solve real world problems.
 
 In this lesson we will walk through a few techniques that can be used to help with the problem solving process.
 
@@ -39,7 +39,7 @@ Some of the questions you should answer at this stage of the process:
 
 - Does your program have a user interface? What will it look like? What functionality will the interface have? Sketch this out on paper.
 - What inputs will your program have? Will the user enter data or will you get input from somewhere else?
-- What's the desired output?
+- What's the desired outp
 - Given your inputs, what are the steps necessary to return the desired output?
 
 The last question is where you will write out an algorithm to solve the problem. <span id="algorithm">You can think of an algorithm as a recipe for solving a particular problem. It defines the steps that need to be taken by the computer to solve a problem in pseudocode.</span>
@@ -48,7 +48,7 @@ The last question is where you will write out an algorithm to solve the problem.
 
 <span id="pseudo">Pseudocode is writing out the logic for your program in natural language instead of code. It helps you slow down and think through the steps your program will have to go through to solve the problem.</span>
 
-Here's an example of what the pseudocode for a program that prints all numbers up to an inputted number might look like:
+Here's an example of what the pseudocode for a program that pints all numbers up to an inputted number might look like:
 
 ```text
 When the user inputs a number
@@ -113,7 +113,9 @@ As we can see from the algorithm we developed, the first subproblem we can solve
 With JavaScript, we'll use the "prompt" method.
 
 ```javascript
-let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+let answer = parseInt(
+  prompt("Please enter the number you would like to FizzBuzz up to: ")
+);
 ```
 
 The above code should create a little popup box that asks the user for a number. The input we get back will be stored in our variable `answer`.
@@ -125,7 +127,9 @@ We wrapped the prompt call in a `parseInt` function so that a number is returned
 With that done, let's move on to the next subproblem: "Loop from 1 to the entered number". There are many ways to do this in JavaScript. One of the common ways - that you actually see in many other languages like Java, C++, and Ruby - is with the [for loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for):
 
 ```javascript
-let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+let answer = parseInt(
+  prompt("Please enter the number you would like to FizzBuzz up to: ")
+);
 
 for (let i = 1; i <= answer; i++) {
   console.log(i);
@@ -141,7 +145,9 @@ Most of the time, programmers find themselves looping from 0. Due to the needs o
 With that working, let's move on to the next problem: If the current number is divisible by 3, then print `Fizz`.
 
 ```javascript
-let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+let answer = parseInt(
+  prompt("Please enter the number you would like to FizzBuzz up to: ")
+);
 
 for (let i = 1; i <= answer; i++) {
   if (i % 3 === 0) {
@@ -172,7 +178,9 @@ Fizz
 The program is starting to take shape. The final few subproblems should be easy to solve as the basic structure is in place and they are just different variations of the condition we've already got in place. Let's tackle the next one: If the current number is divisible by 5 then print `Buzz`.
 
 ```javascript
-let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+let answer = parseInt(
+  prompt("Please enter the number you would like to FizzBuzz up to: ")
+);
 
 for (let i = 1; i <= answer; i++) {
   if (i % 3 === 0) {
@@ -203,7 +211,9 @@ Buzz
 We have one more subproblem to solve to complete the program: If the current number is divisible by 3 and 5 then print `FizzBuzz`.
 
 ```javascript
-let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+let answer = parseInt(
+  prompt("Please enter the number you would like to FizzBuzz up to: ")
+);
 
 for (let i = 1; i <= answer; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
@@ -251,9 +261,9 @@ Buzz
 
 <div class="lesson-content__panel" markdown="1">
 
-  1. Read [How to Think Like a Programmer - Lessons in Problem Solving](https://www.freecodecamp.org/news/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2/) by Richard Reis.
-  1. Watch [How to Begin Thinking Like a Programmer](https://www.youtube.com/watch?v=azcrPFhaY9k) by Coding Tech. It's an hour long but packed full of information and definitely worth your time watching.
-  1. Read this [Pseudocode: What It Is and How to Write It](https://www.builtin.com/data-science/pseudocode) article from Built In.
+1. Read [How to Think Like a Programmer - Lessons in Problem Solving](https://www.freecodecamp.org/news/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2/) by Richard Reis.
+1. Watch [How to Begin Thinking Like a Programmer](https://www.youtube.com/watch?v=azcrPFhaY9k) by Coding Tech. It's an hour long but packed full of information and definitely worth your time watching.
+1. Read this [Pseudocode: What It Is and How to Write It](https://www.builtin.com/data-science/pseudocode) article from Built In.
 
 </div>
 
@@ -273,6 +283,6 @@ This section contains questions for you to check your understanding of this less
 
 This section contains helpful links to other content. It isn't required, so consider it supplemental.
 
-- Read the first chapter in [Think Like a Programmer: An Introduction to Creative Problem Solving](https://nostarch.com/thinklikeaprogrammer) (*not free*). This book's examples are in C++, but you will understand everything since the main idea of the book is to teach programmers to better solve problems. It's an amazing book and worth every penny. It will make you a better programmer.
+- Read the first chapter in [Think Like a Programmer: An Introduction to Creative Problem Solving](https://nostarch.com/thinklikeaprogrammer) (_not free_). This book's examples are in C++, but you will understand everything since the main idea of the book is to teach programmers to better solve problems. It's an amazing book and worth every penny. It will make you a better programmer.
 - Watch this [video on repetitive programming techniques](https://ocw.mit.edu/courses/res-tll-004-stem-concept-videos-fall-2013/resources/basic-programming-techniques/).
 - Watch [Jonathan Blow on solving hard problems](https://www.youtube.com/watch?v=6XAu4EPQRmY) where he gives sage advice on how to approach problem solving in software projects.
